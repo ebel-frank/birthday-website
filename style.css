@@ -1,25 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
 body {
     height:100%;
-    margin:2em 2em;
-    background-color: #de6c7b;
+    margin:0;
+    background-color: rgb(221, 221, 221);
     font-family: 'Poppins', sans-serif;
+    position: relative;
     overflow:scroll;
     vertical-align:middle;
 }
 
-#cont{
+#background {
+    height: 370px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: #895E33 url('/img/birthdaybg.jpeg');
+    position: absolute;
+    background-color:;
+}
+
+#content {
     background: white;
     box-shadow:0 0 25px 2px rgba(0,0,0,0.1);
     box-shadow: 10px 10px 10px rgba(0, 0, 0, .5);
-    border-radius: 11px;
+    margin: 2em 2em;
     padding: 35px 20px;
-    z-index: 3;
+}
+
+#date {
+    text-transform: uppercase;
+    display: block;
+    font-family: 'Crete Round', sans-serif;
+    font-weight: bold;
+    padding: 2em 2em 2em;
+    text-align: center;
+    font-size:45px;
+    color: white;
 }
 
 #title{
-    text-transform: uppercase ;
+    text-transform: uppercase;
     font-weight: bold;
     text-align: center;
     font-size: 25px;
@@ -41,31 +63,30 @@ img {
     border-radius: 11px;
 }
 
+footer {
+    background-color: #895E33;
+    padding:0px 20px 20px;
+}
+
 canvas{
     position:fixed;
     top:0;
     left:0;
-    z-index: -1;
     width: 100%;
 }
 
 @media (min-width: 730px) {
-    body {
-        margin:3em 3em;
-    }
 
-    #cont {
+    #content {
         padding: 40px 25px;
     }
 
-    #cont main {
+    #content {
         display: grid;
         justify-content: space-around;
         grid-template-columns: repeat(2, 40%);
         grid-template-areas: "face text";
     }
-
-    
 
     #subtitle{
         grid-area: text;
@@ -78,11 +99,8 @@ canvas{
 }
 
 @media (min-width: 900px) {
-    body {
-        margin:4.5em 4.5em;
-    }
 
-    #cont {
+    #content {
         padding: 45px 30px;
     }
 }

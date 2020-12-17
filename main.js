@@ -1,3 +1,5 @@
+//took the concept of emoji rain from this code: https://code.sololearn.com/W9MqcRPiaQfe/?ref=app
+
 var ctx, cvs
 var emojis=[]
 window.onload=function(){
@@ -8,7 +10,10 @@ window.onload=function(){
     ctx = cvs.getContext("2d")
     draw()
 
-    var imageSources = ["/img/kosiso1.jpg", "/img/kosiso2.jpg", "/img/kosiso3.jpg", "/img/kosiso4.jpg", "/img/kosiso.jpg"]
+    var imageSources = [
+    "/img/chinyere3.jpg", "/img/chinyere4.jpg", "/img/chinyere5.jpg",
+    "/img/chinyere7.png", "/img/chinyere8.png", "/img/chinyere10.jpg", 
+    "/img/chinyere11.jpg", "/img/chinyere12.jpg", "/img/chinyere13.jpg"]
     var index = 0;
     setInterval (function(){
         if (index === imageSources.length) {
