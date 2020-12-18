@@ -43,6 +43,7 @@ body {
 #title{
     text-transform: uppercase;
     font-weight: bold;
+    font-family: 'Crete Round', sans-serif;
     text-align: center;
     font-size: 25px;
     color: #ff6347;
@@ -75,32 +76,3 @@ canvas{
     width: 100%;
 }
 
-@media (min-width: 730px) {
-
-    #content {
-        padding: 40px 25px;
-    }
-
-    #content {
-        display: grid;
-        justify-content: space-around;
-        grid-template-columns: repeat(2, 40%);
-        grid-template-areas: "face text";
-    }
-
-    #subtitle{
-        grid-area: text;
-        align-self: center;
-    }
-
-    img {
-        grid-area: face;
-    }
-}
-
-@media (min-width: 900px) {
-
-    #content {
-        padding: 45px 30px;
-    }
-}

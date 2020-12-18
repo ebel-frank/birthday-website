@@ -1,9 +1,10 @@
 //took the concept of emoji rain from this code: https://code.sololearn.com/W9MqcRPiaQfe/?ref=app
-
+var audio = new Audio("https://dl.dropbox.com/s/c6aq63o2mwuvkui/Happy-Birthday-to-you-Singing-Bell.mp3")
+audio.play()
 var ctx, cvs
 var emojis=[]
+
 window.onload=function(){
-    //document.getElementById("audio").play()
     cvs = document.getElementsByTagName("canvas")[0]
     cvs.width= window.innerWidth
     cvs.height= window.innerHeight
@@ -11,9 +12,9 @@ window.onload=function(){
     draw()
 
     var imageSources = [
-    "/img/chinyere3.jpg", "/img/chinyere4.jpg", "/img/chinyere5.jpg",
-    "/img/chinyere7.png", "/img/chinyere8.png", "/img/chinyere10.jpg", 
-    "/img/chinyere11.jpg", "/img/chinyere12.jpg", "/img/chinyere13.jpg"]
+    "/img/chinyere7.png", "/img/chinyere10.jpg", 
+    "/img/chinyere11.jpg", "/img/chinyere12.jpg", 
+    "/img/chinyere13.jpg"]
     var index = 0;
     setInterval (function(){
         if (index === imageSources.length) {
